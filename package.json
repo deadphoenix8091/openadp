@@ -1,0 +1,21 @@
+{
+  "name": "openadp",
+  "version": "1.0.0",
+  "description": "Open source project to interface and manipulate ADPs",
+  "main": "index.js",
+  "scripts": {
+    "relayserver": "nodemon --watch '*.ts' --exec ts-node ./src/RelayServer.ts",
+    "relay-physical": "nodemon --watch '*.ts' --exec ts-node ./src/RelayPhysical.ts",
+    "relay-virtual": "nodemon --watch '*.ts' --exec ts-node ./src/RelayVirtual.ts"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@types/ws": "^8.5.4",
+    "nodemon": "^2.0.22",
+    "serialport": "^11.0.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4",
+    "ws": "^8.13.0"
+  }
+}
